@@ -1,0 +1,42 @@
+import React from "react";
+import birdImg from "../../../assets/bird.png";
+import ReactAudioPlayer from "react-audio-player";
+
+const BirdCard = ({ bird }) => {
+  let regex = /([A-Z])\w+/g;
+  const sono = bird.sono.small.match(regex)[0];
+  const fileName = decodeURIComponent(bird["file-name"]);
+  const audioUrl = `https://xeno-canto.org/sounds/uploaded/${sono}/${fileName}`;
+
+  return (
+    <div className="relative rounded-xl border border-gray-200 h-[480px]">
+      <img className="w-full" src={birdImg} alt="bird" />
+
+      <div className="flex flex-col gap-6 p-6">
+        <h3 className="color-2">{bird.en ? bird.en : "Identity Unknown"}</h3>
+        <div className="flex flex-col gap-4">
+          <div className="flex gap-5 item-center">
+            <span className="color-4">🐤 Specie</span>
+            <span className="color-3">{bird.sp}</span>
+          </div>
+          <div className="flex gap-5 item-center">
+            <span className="color-4 whitespace-nowrap">📍 Place</span>
+            <span className="color-3">{bird.loc}</span>
+          </div>
+        </div>
+      </div>
+      <div className="absolute left-0 right-0 bottom-0">
+        <div className="flex flex-col gap-6 p-6">
+          <div className="bg-gray-200 h-[1px]"></div>
+          <ReactAudioPlayer
+            className="h-[40px] w-full"
+            src={audioUrl}
+            controls
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default BirdCard;

@@ -2,22 +2,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face{
-  font-family: 'Gilroy';
-  src: url("../src/assets/fonts/Gilroy-Regular.woff") format("woff");
+@font-face {
+  font-family: "Gilroy";
+ 
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --color-primary: #0088f6;
-  --color-secondary: #0088f6;
-  --color-tertiary: #131825;
-  --color-grey: #646464;
-  --font-color-1: #fff;
-  --font-color-2: #7d7d7d;
-  --font-color-3: #2bcdaa;
+  --color-primary: #66a9c3;
+  --color-secondary: #39494f;
+  --font-color-1: #1f333a;
+  --font-color-2: #a3b8c1;
+  --font-color-3: #E5F1F5;
 }
 
 *,
@@ -38,5 +36,28 @@ body {
   scroll-behavior: smooth;
   font-size: 1.6rem;
 }
-
-
+.color-1 {
+  color: var(--color-primary);
+}
+.color-2 {
+  color: var(--color-secondary);
+}
+.color-3 {
+  color: var(--font-color-1);
+}
+.color-4 {
+  color: var(--font-color-2);
+}
+.back-1 {
+  background-color: var(--font-color-3);
+}
+.load-btn {
+  border: 1px solid var(--color-primary);
+  padding: 14px 85px;
+  border-radius: 20px;
+  color: var(--color-primary);
+}
+.load-btn:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
