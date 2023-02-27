@@ -1,18 +1,19 @@
 import React from "react";
 import { HiOutlineSearch } from "react-icons/hi";
 
-const Search = () => {
+const Search = ({ handleSearch }) => {
   return (
     <div className="flex flex-col gap-4 ">
-      <span className="text-gray-700">Search</span>
+      <span className="text-gray-700 text-[16px]">Search</span>
       <div className="flex gap-2 items-center w-96 border border-gray-300 pl-5 p-[6px] rounded-lg">
         <HiOutlineSearch className="color-1" />
         <input
           type="text"
           id="simple-search"
-          className=" text-gray-900 text-xl  focus:outline-none "
+          className=" text-gray-900 text-[16px]  focus:outline-none "
           placeholder="Search a bird"
           required
+          onChange={handleSearch}
         />
       </div>
     </div>

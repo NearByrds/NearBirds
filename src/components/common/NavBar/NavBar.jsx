@@ -19,13 +19,13 @@ const NavBar = () => {
           </a>
           <ul className=" hidden md:flex items-center gap-7 color-2">
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#">Map</a>
+              <a href="/map">Map</a>
             </li>
             <li>
-              <a href="#">Team</a>
+              <a href="/team">Team</a>
             </li>
           </ul>
         </div>
@@ -67,16 +67,16 @@ const NavBar = () => {
 
       {isNavOpen && (
         <div className="absolute z-1000 back-1 left-0 right-0 md:hidden">
-          <div className="flex flex-col pt-16 pb-8  items-center space-y-4 ">
+          <div className="flex flex-col pt-16 pb-8  items-center space-y-4 text-[16px]">
             <ul className="flex flex-col gap-5 color-2">
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">Map</a>
+                <a href="/map">Map</a>
               </li>
               <li>
-                <a href="#">Team</a>
+                <a href="/team">Team</a>
               </li>
             </ul>
             <ul className="flex  items-center gap-8">

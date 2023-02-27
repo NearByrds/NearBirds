@@ -1,8 +1,9 @@
 import React from 'react'
+import Loader from "../../components/common/Loader/Loader"
 
 const Map = () => {
   return (
-    <div>Map</div>
+    <Loader/>
   )
 }
 

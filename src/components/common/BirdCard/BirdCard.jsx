@@ -1,20 +1,33 @@
-import React from "react";
-import birdImg from "../../../assets/bird.png";
+import React, { useState, useEffect } from "react";
+import birdImg from "../../../assets/placeholder.png";
 import ReactAudioPlayer from "react-audio-player";
+import fetchImage from "../../../utils/FetchImage";
 
 const BirdCard = ({ bird }) => {
+  const [imageUrl, setImageUrl] = useState("");
+
+  useEffect(() => {
+    fetchImage(bird,setImageUrl);
+  }, []);
+
   let regex = /([A-Z])\w+/g;
   const sono = bird.sono.small.match(regex)[0];
   const fileName = decodeURIComponent(bird["file-name"]);
   const audioUrl = `https://xeno-canto.org/sounds/uploaded/${sono}/${fileName}`;
 
   return (
-    <div className="relative rounded-xl border border-gray-200 h-[480px]">
-      <img className="w-full" src={birdImg} alt="bird" />
+    <div className="relative rounded-xl border border-gray-200 h-[540px] max-w-[283px]">
+      <img
+        className="w-full h-[239px]"
+        src={imageUrl ? imageUrl : birdImg}
+        alt="bird"
+      />
 
       <div className="flex flex-col gap-6 p-6">
-        <h3 className="color-2">{bird.en ? bird.en : "Identity Unknown"}</h3>
-        <div className="flex flex-col gap-4">
+        <h3 className="color-2 font-bold text-[24px]">
+          {bird.en ? bird.en : "Identity Unknown"}
+        </h3>
+        <div className="flex flex-col gap-4 text-[16px]">
           <div className="flex gap-5 item-center">
             <span className="color-4">🐤 Specie</span>
             <span className="color-3">{bird.sp}</span>
