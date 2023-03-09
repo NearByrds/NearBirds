@@ -1,5 +1,7 @@
 # NearBirds
 
+![CI](https://github.com/desmigor/NearBird/actions/workflows/ci.yaml/badge.svg)
+
 ## Local development
 
 ```bash
