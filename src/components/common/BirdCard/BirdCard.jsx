@@ -8,7 +8,7 @@ const BirdCard = ({ bird }) => {
 
   useEffect(() => {
     fetchImage(bird,setImageUrl);
-  }, []);
+  }, [bird]);
 
   let regex = /([A-Z])\w+/g;
   const sono = bird.sono.small.match(regex)[0];
