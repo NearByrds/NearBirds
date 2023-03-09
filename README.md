@@ -1,7 +1,15 @@
-# Near birds
+# NearBirds
 
-## 1. How to run the project locally:
-- ```npm i``` : Install devepencies
-- ```npm run dev``` : run startup script
+## Local development
 
-The project will be available locally at [http://localhost:3000/](http://localhost:3000/)
+```bash
+npm install
+npm run start
+```
+
+## Docker
+
+```bash
+docker build -t nearbirds .
+docker run -p3000:3000 nearbirds
+```

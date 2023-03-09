@@ -1,28 +1,33 @@
 {
-  "name": "truck-radar",
+  "name": "nearbirds",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 3000",
+    "start": "vite --host --port 3000",
     "build": "vite build",
-    "preview": "vite preview --port  8080"
+    "lint": "eslint src",
+    "preview": "vite preview --port 8080"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^2.2.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-audio-player": "^0.17.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.4.3",
+    "tailwindcss": "^3.2.4",
     "vite": "^3.2.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.19",
-    "tailwindcss": "^3.2.4"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.35.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
