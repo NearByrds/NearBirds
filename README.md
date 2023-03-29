@@ -1,4 +1,4 @@
-![CI](https://github.com/NearByrds/NearBirds/actions/workflows/ci.yaml/badge.svg)
+![ESLint](https://github.com/NearByrds/NearBirds/actions/workflows/lint.yaml/badge.svg) ![Release](https://github.com/NearByrds/NearBirds/actions/workflows/release.yaml/badge.svg) ![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m794023093-51785fc60023721fd4c2f7d3)
 
 # NearBirds
 
@@ -11,7 +11,8 @@ These tools were used to ensure software quality and reliability of the web appl
 - [ESLint](https://eslint.org/) enforces code style and helps catching bugs early in development
 - [Husky](https://typicode.github.io/husky/#/) installs Git hooks to run static checkers before each commit
 - [Jest](https://jestjs.io/) to run unit tests
-- [GitHub Actions](https://github.com/features/actions) to run CI pipelines on source code updates.
+- [GitHub Actions](https://github.com/features/actions) to run CI pipelines on source code updates
+- [UptimeRobot](https://uptimerobot.com/) to monitor application availability
 
 ## Local development
 
