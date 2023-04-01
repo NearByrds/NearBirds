@@ -1,4 +1,4 @@
-const API_KEY = "a083262bdc7ee37402a4e14e452025ed";
+const API_KEY = "e9290d9003214f65211d8b8594b6957c";
 
 const fetchImage = async (bird, setImageUrl) => {
   try {
