@@ -35,7 +35,7 @@ export const fetchData = async (
     return "";
   } catch (error) {
     console.log(error.message);
-    Sentry.captureException(err);
+    Sentry.captureException(error);
 
   }
 };
