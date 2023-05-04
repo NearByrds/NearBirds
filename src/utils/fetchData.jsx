@@ -1,3 +1,11 @@
+function uniq(a, key) {
+  var seen = {};
+  return a.filter(function(item) {
+    const k = key(item)
+    return seen.hasOwnProperty(k) ? false : (seen[k] = true);
+  });
+}
+
 export const fetchData = async (
   country,
   setBirds,
@@ -17,8 +25,9 @@ export const fetchData = async (
       }
     );
     const results = await res.json();
-    setBirds(results.recordings);
-    setFilteredBirds(results.recordings);
+    const records = uniq(results.recordings, r => r.en)
+    setBirds(records);
+    setFilteredBirds(records);
     setLoading(false);
     return "";
   } catch (error) {
