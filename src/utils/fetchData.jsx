@@ -1,3 +1,5 @@
+import * as Sentry from "@sentry/browser";
+
 function uniq(a, key) {
   var seen = {};
   return a.filter(function(item) {
@@ -32,6 +34,8 @@ export const fetchData = async (
     return "";
   } catch (error) {
     console.log(error.message);
+    Sentry.captureException(err);
+
   }
 };
 

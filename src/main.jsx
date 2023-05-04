@@ -11,7 +11,7 @@ import './index.css';
 import App from './App';
 
 Sentry.init({
-  dsn: "https://40c936400c8d4798a78be9c2b416eab6@o4504886346711040.ingest.sentry.io/4504886355755008",
+  dsn: "https://00cc45f0b15c447c940b35c414546384@o4504886346711040.ingest.sentry.io/4504886354640896",
   integrations: [ new BrowserTracing({
     routingInstrumentation: Sentry.reactRouterV6Instrumentation(
         React.useEffect,
