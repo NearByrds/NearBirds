@@ -7,7 +7,8 @@
     "start": "vite --host --port 3000",
     "build": "vite build",
     "lint": "eslint src",
-    "preview": "vite preview --port 8080"
+    "preview": "vite preview --port 8080",
+    "prepare": "npx husky install"
   },
   "dependencies": {
     "@sentry/react": "^7.44.2",
@@ -30,6 +31,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^8.35.0",
     "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0"
   }
 }
