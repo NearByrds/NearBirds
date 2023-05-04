@@ -19,4 +19,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Sentry.withProfiler(App);

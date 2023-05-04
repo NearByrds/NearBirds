@@ -1,10 +1,14 @@
 import React from "react";
 import loader from "../../../assets/bird-loader.gif";
+import * as Sentry from '@sentry/react';
+
 const Loader = () => {
   return (
-    <div className="flex justify-center items-center h-screen blured">
-      <img src={loader} alt="bird-loader" />
-    </div>
+    <Sentry.ErrorBoundary fallback={<p>An error has occurred in Loader File</p>}>
+        <div className="flex justify-center items-center h-screen blured">
+          <img src={loader} alt="bird-loader" />
+        </div>
+      </Sentry.ErrorBoundary>
   );
 };
 
