@@ -1,4 +1,5 @@
 const API_KEY = "e9290d9003214f65211d8b8594b6957c";
+import * as Sentry from "@sentry/browser";
 
 const fetchImage = async (bird, setImageUrl) => {
   try {
@@ -16,6 +17,8 @@ const fetchImage = async (bird, setImageUrl) => {
     setImageUrl(imageLink);
     return "";
   } catch (error) {
+    Sentry.captureException(error);
+
     console.log(error.message);
   }
 };

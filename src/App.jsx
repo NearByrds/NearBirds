@@ -2,17 +2,21 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import MapPage from "./pages/MapPage/MapPage";
 import TeamPage from "./pages/TeamPage/TeamPage";
+import * as Sentry from "@sentry/react";
+
+const SentryRoutes = Sentry.withSentryReactRouterV6Routing(Routes)
 
 const App = () => {
   return (
     <div>
-      <Routes>
+      <SentryRoutes>
         <Route exact path="/" element={<HomePage />} />
         <Route path="/map" element={<MapPage />} />
         <Route path="/team" element={<TeamPage />} />
-      </Routes>
+      </SentryRoutes>
+
     </div>
   );
 };
 
-export default App;
+export default Sentry.withProfiler(App);

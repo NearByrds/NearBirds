@@ -6,6 +6,8 @@ import BirdsList from "../common/BirdsList/BirdsList";
 import Footer from "../common/Footer/Footer";
 import Loader from "../common/Loader/Loader";
 import { searchFunc, fetchData } from "../../utils/fetchData";
+import * as Sentry from '@sentry/react';
+import { SENTRY_BAGGAGE_KEY_PREFIX } from "@sentry/utils";
 
 const Home = () => {
   const [country, setCountry] = useState("Russia");
@@ -31,6 +33,7 @@ const Home = () => {
   }, [country]);
 
   return (
+    <Sentry.ErrorBoundary fallback={<p>An error has occurred in Home File</p>}>
     <>
       {!loading ? (
         <div className="relative">
@@ -76,6 +79,7 @@ const Home = () => {
         <Loader />
       )}
     </>
+    </Sentry.ErrorBoundary>
   );
 };
 
