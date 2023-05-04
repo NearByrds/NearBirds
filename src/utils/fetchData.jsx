@@ -23,6 +23,7 @@ export const fetchData = async (
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
+          "Accept-Language": "en-US",
         },
       }
     );
