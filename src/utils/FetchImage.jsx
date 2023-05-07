@@ -29,7 +29,7 @@ const fetchImage = async (bird, setImageUrl) => {
         const imageLink = Object.values(results.query.pages)[0].imageinfo[0].url;
         setImageUrl(imageLink);
     } catch (error) {
-        Sentry.captureException(error);
+        Sentry.captureMessage(error.message);
 
         console.log(error.message);
     }
