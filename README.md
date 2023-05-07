@@ -29,7 +29,7 @@ You may check our website [64.226.66.76](http://64.226.66.76/).
 - 📱 Mobile version of website
 - 🔎 Birds list page search
 
- More details about website features [here](https://docs.google.com/document/d/1Z5fMy3GKXVEUm8NAlcUJOqv7prlsKXJHYE4XdYm2gzk/edit?usp=sharing)
+ More details about website features [here](https://docs.google.com/document/d/1Z5fMy3GKXVEUm8NAlcUJOqv7prlsKXJHYE4XdYm2gzk/edit?usp=sharing).
 
 ## Quality Assurance
 
@@ -41,7 +41,7 @@ These tools were used to ensure software quality and reliability of the web appl
 - [GitHub Actions](https://github.com/features/actions) to run CI pipelines on source code updates
 - [UptimeRobot](https://uptimerobot.com/) to monitor application availability
 - [Watchtower](https://containrrr.dev/watchtower/) for auto-deployment of the latest docker container image
-- [DigitalOcean Metrics Agent](https://docs.digitalocean.com/products/monitoring/quickstart/) to monitor resource usage and network load for the application.
+- [DigitalOcean Metrics Agent](https://docs.digitalocean.com/products/monitoring/quickstart/) to monitor resource usage and network load for the application
 - [npm-audit](https://docs.npmjs.com/cli/v9/commands/npm-audit) to check project for vulnerabilities
 - [Sentry](https://sentry.io/) to track frontend-related errors
 - [LightHouse](https://github.com/GoogleChrome/lighthouse-ci) to test application performance
