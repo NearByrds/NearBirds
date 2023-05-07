@@ -2,7 +2,19 @@
 
 # NearBirds
 
-Discover birds in your region and listen to their chirping.
+Discover birds in your region and listen to their chirping. You can check our website [here](http://64.226.66.76).
+
+## Features
+
+- 🐥 Birds list
+- 🏳️ List of countries
+- ⏳ Page loader
+- 🔀 Website navigation bar
+- 🎧 Birds song
+- 📱 Mobile version of website
+- 🔎 Birds list page search
+
+ More details about website features [here](https://docs.google.com/document/d/1Z5fMy3GKXVEUm8NAlcUJOqv7prlsKXJHYE4XdYm2gzk/edit?usp=sharing)
 
 ## Quality Assurance
 
@@ -15,6 +27,7 @@ These tools were used to ensure software quality and reliability of the web appl
 - [UptimeRobot](https://uptimerobot.com/) to monitor application availability
 - [Watchtower](https://containrrr.dev/watchtower/) for auto-deployment of the latest docker contaienr image
 - [DigitalOcean Metrics Agent](https://docs.digitalocean.com/products/monitoring/quickstart/) to monitor resource usage and network load for the application.
+- [Sentry](https://sentry.io/welcome/)
 
 ## Local development
 
@@ -29,6 +42,10 @@ npm run start
 docker build -t nearbirds .
 docker run -p3000:3000 nearbirds
 ```
+
+## Sentry Results
+
+You can check the results of Sentry [here](./images/)
 
 ## License
 
