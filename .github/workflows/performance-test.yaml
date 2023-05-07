@@ -24,7 +24,7 @@ jobs:
         run: sleep 60
 
       - name: Test performance with Lighthouse
-        uses: treosh/lighthouse-ci-action
+        uses: treosh/lighthouse-ci-action@10.1.0
         with:
           urls: 'http://64.226.66.76'
           configPath: './lighthouserc.json'

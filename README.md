@@ -1,4 +1,4 @@
-![Lint & Test](https://github.com/NearByrds/NearBirds/actions/workflows/lint-and-test.yaml/badge.svg) ![Release & Scan](https://github.com/NearByrds/NearBirds/actions/workflows/release-and-scan.yaml/badge.svg) ![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m794023093-51785fc60023721fd4c2f7d3) ![LightHouse Performance Test](https://github.com/NearByrds/NearBirds/actions/workflows/performance-test.yaml/badge.svg)
+![Lint & Test](https://github.com/NearByrds/NearBirds/actions/workflows/lint-and-test.yaml/badge.svg) ![Release & Scan](https://github.com/NearByrds/NearBirds/actions/workflows/release-and-scan.yaml/badge.svg) ![LightHouse Performance Test](https://github.com/NearByrds/NearBirds/actions/workflows/performance-test.yaml/badge.svg) ![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m794023093-51785fc60023721fd4c2f7d3)
 
 # NearBirds
 
