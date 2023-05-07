@@ -13,6 +13,8 @@ These tools were used to ensure software quality and reliability of the web appl
 - [Jest](https://jestjs.io/) to run unit tests
 - [GitHub Actions](https://github.com/features/actions) to run CI pipelines on source code updates
 - [UptimeRobot](https://uptimerobot.com/) to monitor application availability
+- [Watchtower](https://containrrr.dev/watchtower/) for auto-deployment of the latest docker contaienr image
+- [DigitalOcean Metrics Agent](https://docs.digitalocean.com/products/monitoring/quickstart/) to monitor resource usage and network load for the application.
 
 ## Local development
 
