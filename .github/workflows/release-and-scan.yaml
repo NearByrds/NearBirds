@@ -35,9 +35,5 @@ jobs:
     needs: release
     steps:
       - uses: actions/checkout@v3
-      - name: Run Snyk to check Docker image for vulnerabilities
-        uses: snyk/actions/docker@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          image: sh3b0/nearbirds
+      - name: Run npm audit to check project for vulnerabilities
+        run: npm audit

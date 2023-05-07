@@ -1,0 +1,30 @@
+name: LightHouse Performance Test
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/**"
+      - ".github/workflows/**"
+  pull_request:
+    types:
+      - opened
+    branches:
+      - main
+
+jobs:
+  lhci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Wait for latest app version to be up
+        shell: bash
+        run: sleep 60
+
+      - name: Test performance with Lighthouse
+        uses: treosh/lighthouse-ci-action
+        with:
+          urls: 'http://64.226.66.76'
+          configPath: './lighthouserc.json'
