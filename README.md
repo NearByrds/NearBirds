@@ -4,6 +4,8 @@
 
 Discover birds in your region and listen to their chirping.
 
+You may check our website [64.226.66.76](http://64.226.66.76/).
+
 <details>
   <summary><strong>Screenshots</strong></summary>
   <table>
@@ -16,6 +18,18 @@ Discover birds in your region and listen to their chirping.
     </tbody>
   </table>
 </details>
+
+## Features
+
+- 🐥 Birds list
+- 🏳️ List of countries
+- ⏳ Page loader
+- 🔀 Website navigation bar
+- 🎧 Birds song
+- 📱 Mobile version of website
+- 🔎 Birds list page search
+
+ More details about website features [here](https://docs.google.com/document/d/1Z5fMy3GKXVEUm8NAlcUJOqv7prlsKXJHYE4XdYm2gzk/edit?usp=sharing)
 
 ## Quality Assurance
 
