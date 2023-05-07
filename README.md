@@ -38,6 +38,7 @@ These tools were used to ensure software quality and reliability of the web appl
 - [ESLint](https://eslint.org/) enforces code style and helps to catch bugs early in development
 - [Husky](https://typicode.github.io/husky/#/) installs Git hooks to run static checkers before each commit
 - [Jest](https://jestjs.io/) to run unit tests
+- [Selenium](https://www.selenium.dev/) to run UI tests
 - [GitHub Actions](https://github.com/features/actions) to run CI pipelines on source code updates
 - [UptimeRobot](https://uptimerobot.com/) to monitor application availability
 - [Watchtower](https://containrrr.dev/watchtower/) for auto-deployment of the latest docker container image
