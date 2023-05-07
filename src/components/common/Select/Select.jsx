@@ -9,7 +9,7 @@ const Select = ({ country, handleNextCountry }) => {
     <Sentry.ErrorBoundary fallback={<p>An error has occurred in Select File</p>}>
 
       <div className="space-y-2">
-        <label htmlFor="base" className="block mb-3 text-[16px] text-gray-600">
+        <label htmlFor="base" className="block mb-3 text-[16px] text-gray-600 search-label">
           Select a country
         </label>
         <select
