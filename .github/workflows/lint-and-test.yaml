@@ -1,0 +1,41 @@
+name: Lint and Test
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/**"
+      - ".github/workflows/**"
+  pull_request:
+    types:
+      - opened
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install modules
+        run: npm ci
+      - name: Run ESLint
+        run: npx eslint src --ext .js,.jsx
+
+  test:
+    runs-on: ubuntu-latest
+    needs: eslint
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install modules
+        run: npm ci
+      - name: Run Jest
+        run: npm run test
+   
