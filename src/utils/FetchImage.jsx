@@ -12,14 +12,15 @@ const fetchImage = async (bird, setImageUrl) => {
         }
 
         const pageReq = await fetch(
-            `https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=${searchText}&srprop=snippet&format=json&origin=*`,
+            `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${searchText}&srprop=snippet&format=json&origin=*`,
             options
         );
         const pageResp = await pageReq.json();
         const pageName = pageResp.query.search[0].title;
         const imageReq = await fetch(
-            `https://en.wikipedia.org/w/api.php?action=query&titles=${pageName}&prop=pageimages&piprop=original&format=json&origin=*`
-        )
+            `https://en.wikipedia.org/w/api.php?action=query&titles=${pageName}&prop=pageimages&piprop=original&format=json&origin=*`,
+            options
+        );
         const imageResp = await imageReq.json();
         const imageLink = Object.values(imageResp.query.pages)[0].original.source;
 
