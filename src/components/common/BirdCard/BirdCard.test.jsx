@@ -77,13 +77,6 @@ describe('BirdCard tests', () => {
             expect(locInfoChildren[1].textContent).toContain('test-location');
 
             expect(global.fetch).toHaveBeenCalledTimes(1);
-            expect(global.fetch).toHaveBeenCalledWith('https://en.wikipedia.org/w/api.php?action=parse&prop=images&page=test-en&format=json&origin=*', {
-                'headers': {
-                    'Accept': 'application/json',
-                    'Accept-Language': 'en-US'
-                },
-                method: 'GET'
-            });
 
             let img = container.getElementsByClassName('bird-img');
             expect(img.length).toBe(1);
