@@ -25,3 +25,8 @@ yarn.lock
 *.njsproj
 *.sln
 *.sw?
+
+# Python virtual environment and cache
+venv/
+__pycache__/
+.pytest_cache/
